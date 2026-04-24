@@ -4,40 +4,40 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Умный помощник по выборам",
-    category: "AI/ML и веб-разработка",
-    image: "/omgekeerdestemwijzer-banner.png",
+    title: "Оформление кофейни «Бодрость»",
+    category: "Вывески и интерьерная реклама",
+    image: "/placeholder.jpg",
     description:
-      "AI-приложение для выборов. Пользователи задают вопросы о позициях партий и получают 100% фактические ответы из официальных программ с использованием RAG-технологии.",
-    url: "https://de-omgekeerde-stemwijzer.onrender.com/",
-    tags: ["Next.js", "AI/ML", "RAG", "TypeScript"],
+      "Разработали и изготовили фасадную вывеску с подсветкой, объёмные буквы над барной стойкой и навигационные таблички по всему залу. Проект реализован за 5 дней.",
+    url: "#portfolio",
+    tags: ["Вывеска", "Объёмные буквы", "Таблички", "Монтаж"],
   },
   {
-    title: "Автомойка Tahsin",
-    category: "Веб-дизайн и разработка",
-    image: "/autopoetsbedrijf-tahsin-project.png",
+    title: "Брендирование автопарка логистической компании",
+    category: "Наклейки и плёнки",
+    image: "/placeholder.jpg",
     description:
-      "Профессиональный сайт для автомойки с 20-летним опытом. Полная презентация услуг, автомойки и гаража с современным адаптивным дизайном.",
-    url: "https://www.autopoetsbedrijftahsin.nl/",
-    tags: ["React", "Next.js", "Tailwind CSS"],
+      "Полное брендирование 12 грузовых автомобилей: цветная плёнка, логотип, контактные данные. Материалы рассчитаны на 5 лет службы в любых погодных условиях.",
+    url: "#portfolio",
+    tags: ["Брендирование авто", "Широкоформатная печать", "Плёнка"],
   },
   {
-    title: "Кадровое агентство CAN",
-    category: "Веб-разработка",
-    image: "/can-uitzendbureau-project.png",
+    title: "Выставочный стенд для IT-компании",
+    category: "Стенды и баннеры",
+    image: "/placeholder.jpg",
     description:
-      "Кадровое агентство с 30-летним опытом в садоводческом секторе. Сайт с обзором услуг и прямыми контактами для работодателей и соискателей.",
-    url: "https://canbv.nl/",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+      "Модульный выставочный стенд 3×3 м с подсветкой для участия в отраслевой конференции. Включает баннерные стойки, брендированные скатерти и раздаточные материалы.",
+    url: "#portfolio",
+    tags: ["Выставочный стенд", "Баннеры", "Полиграфия"],
   },
   {
-    title: "Портфолио Murat Sahin",
-    category: "Портфолио-сайт",
-    image: "/murat-sahin-portfolio.png",
+    title: "Полиграфия для сети аптек",
+    category: "Полиграфия",
+    image: "/placeholder.jpg",
     description:
-      "Профессиональное портфолио full-stack разработчика. Демонстрация проектов, навыков и опыта с современным минималистичным дизайном и темной темой.",
-    url: "https://murat-sahin-dev.vercel.app/",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
+      "Тираж листовок, буклетов и ценников для сети из 8 аптек. Разработка единого фирменного стиля, офсетная печать, быстрая доставка по всем точкам.",
+    url: "#portfolio",
+    tags: ["Листовки", "Буклеты", "Офсетная печать"],
   },
 ]
 
@@ -46,9 +46,9 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наше портфолио</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наши работы</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Ознакомьтесь с подборкой наших последних проектов и узнайте, как мы помогаем бизнесу расти с помощью мощных цифровых решений.
+            Реализованные проекты — от небольших табличек до масштабного брендирования. Каждый заказ выполняем с вниманием к деталям.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export function PortfolioSection() {
                     className="gap-2"
                     onClick={() => window.open(project.url, "_blank")}
                   >
-                    Открыть проект <ExternalLink className="h-4 w-4" />
+                    Смотреть проект <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
               </div>

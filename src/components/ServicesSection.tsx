@@ -1,42 +1,42 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Layout, Palette, Code, Share2, Target, Search } from "lucide-react"
+import { Store, Type, LayoutPanelLeft, Tag, Sticker, FileText } from "lucide-react"
 
 const services = [
   {
-    icon: Layout,
-    title: "Веб-дизайн",
+    icon: Store,
+    title: "Вывески",
     description:
-      "Мы создаем сайты, которые не только визуально привлекательны, но и функциональны, удобны в использовании. В CodeCraft ваш бренд в центре внимания — мы обеспечиваем соответствие онлайн-присутствия целям и ценностям вашего бизнеса.",
+      "Изготавливаем световые и несветовые вывески любой сложности: лайтбоксы, объёмные конструкции, панель-кронштейны. Привлекаем внимание прохожих и выделяем ваш бизнес среди конкурентов.",
   },
   {
-    icon: Palette,
-    title: "Графический дизайн",
+    icon: Type,
+    title: "Объёмные буквы",
     description:
-      "От логотипов до постов в соцсетях — мы создаем креативные графические решения, усиливающие ваш бренд. Наши дизайны уникальны и профессиональны, производя нужное впечатление на целевую аудиторию.",
+      "Производим объёмные буквы из металла, пластика и акрила — с подсветкой и без. Идеальны для фасадов, торговых залов и брендинга пространства. Смотрятся эффектно в любое время суток.",
   },
   {
-    icon: Code,
-    title: "Веб-разработка",
+    icon: LayoutPanelLeft,
+    title: "Стенды и баннеры",
     description:
-      "Мы создаем технически надежные и перспективные сайты. Наша команда обеспечивает надежность, масштабируемость и скорость, помогая вашему бизнесу расти в цифровом пространстве.",
+      "Выставочные стенды, информационные стойки, рекламные баннеры и растяжки. Изготавливаем под ключ: от разработки дизайна до монтажа на вашем объекте.",
   },
   {
-    icon: Share2,
-    title: "Соцсети",
+    icon: Tag,
+    title: "Таблички",
     description:
-      "Сильное присутствие в социальных сетях сегодня решает многое. Мы поможем создать впечатление с помощью привлекательных визуалов и эффективных стратегий, чтобы ваш бренд оставался заметным.",
+      "Офисные, адресные и навигационные таблички из акрила, металла и пластика. Гравировка, UV-печать, брендирование — профессиональное оформление любого интерьера.",
   },
   {
-    icon: Target,
-    title: "Результат",
+    icon: Sticker,
+    title: "Наклейки и плёнки",
     description:
-      "В CodeCraft мы нацелены на успех. Наш подход всегда направлен на достижение измеримых результатов, способствующих росту вашего бизнеса. Вместе находим то, что действительно работает.",
+      "Печать наклеек, брендирование автомобилей, витринная плёнка и декоративные покрытия. Высококачественная широкоформатная печать с долгосрочными материалами.",
   },
   {
-    icon: Search,
-    title: "SEO",
+    icon: FileText,
+    title: "Полиграфия",
     description:
-      "Видимость в поиске критически важна. Мы оптимизируем сайт с применением современных SEO-техник, чтобы вы были выше в Google и целевая аудитория легко вас находила.",
+      "Визитки, листовки, буклеты, каталоги и фирменные бланки. Полный цикл от вёрстки до печати — быстрые сроки, яркие цвета, плотные материалы.",
   },
 ]
 
@@ -47,13 +47,13 @@ export function ServicesSection() {
 
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mx-auto block w-fit">
-          Наша экспертиза
+          Наши услуги
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-balance">
-          В чем мы <span className="text-primary">сильны</span>
+          Что мы <span className="text-primary">производим</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-pretty leading-relaxed text-lg">
-          От концепции до запуска — мы трансформируем ваши цифровые амбиции в мощные онлайн-решения, приносящие результат.
+          Полный спектр рекламной продукции — от разработки дизайна до изготовления и монтажа. Всё в одном месте.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
@@ -63,7 +63,7 @@ export function ServicesSection() {
             >
               <CardHeader>
                 <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                  <service.icon className="h-6 w-6" />
+                  <service.icon className="h-6 w-6" strokeWidth={1.5} />
                 </div>
                 <CardTitle className="text-xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
               </CardHeader>

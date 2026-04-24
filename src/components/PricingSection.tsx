@@ -4,39 +4,38 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "99 900",
+    name: "Старт",
+    price: "3 500",
     features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+      "Таблички и наклейки",
+      "Листовки и визитки",
+      "Срок изготовления от 1 дня",
+      "Разработка дизайна включена",
+      "Самовывоз или доставка",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
+    name: "Бизнес",
+    price: "15 000",
     features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+      "Вывеска или объёмные буквы",
+      "Баннеры и стенды",
+      "Печать на плёнке",
+      "Дизайн + производство",
+      "Выезд и монтаж включён",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
+    name: "Комплекс",
     price: "По запросу",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
+      "Полное оформление объекта",
+      "Брендирование автопарка",
+      "Выставочные стенды",
       "Персональный менеджер",
-      "6 месяцев поддержки",
+      "Гарантия на все работы",
     ],
     highlighted: false,
   },
@@ -60,10 +59,10 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Выберите <span className="text-primary">подходящий пакет</span> для вашего заказа
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            От небольших заказов до комплексного оформления — работаем с любым масштабом
           </p>
         </div>
 
@@ -121,8 +120,8 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+            Все пакеты включают <span className="text-primary font-semibold">разработку дизайна</span> и{" "}
+            <span className="text-primary font-semibold">бесплатную доставку по городу</span>
           </p>
         </div>
       </div>
