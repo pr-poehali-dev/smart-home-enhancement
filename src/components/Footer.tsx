@@ -6,9 +6,9 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">РекламаПро</h3>
+            <h3 className="text-xl font-bold mb-4">Завод Рекламы</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              © 2026 РекламаПро. Все права защищены.
+              © 2026 Завод Рекламы. Все права защищены.
             </p>
           </div>
 
